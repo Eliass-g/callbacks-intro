@@ -1,8 +1,6 @@
 const findWaldo = function(names, found) {
-  let index = 0;
-  names.forEach((name) => {
+  names.forEach((name, index) => {
     if (name === "Waldo") found(index);
-    index++;
   });
 };
 
